@@ -1,0 +1,22 @@
+allprojects {
+    repositories {
+        // 优先加载本地，阿里云、mvn仓库，私服
+        mavenLocal()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
+        }
+        mavenCentral()
+        maven {
+            url "http://nexus2-dev-tech.ikunchi.com/nexus/content/groups/public"
+        }
+    }
+
+    // 私服的地址 账户与密码
+    ext {
+        nexus_snapshots_url = "http://nexus2-dev-tech.ikunchi.com/nexus/content/repositories/snapshots"
+        nexus_release_url = "http://nexus2-dev-tech.ikunchi.com/nexus/content/repositories/releases"
+
+        userName = "admin"
+        password = "admin123"
+    }
+}
