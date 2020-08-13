@@ -12,11 +12,5 @@ allprojects {
     }
 
     // 私服的地址 账户与密码
-    ext {
-        nexus_snapshots_url = "http://nexus2-dev-tech.ikunchi.com/nexus/content/repositories/snapshots"
-        nexus_release_url = "http://nexus2-dev-tech.ikunchi.com/nexus/content/repositories/releases"
 
-        userName = "admin"
-        password = "admin123"
-    }
 }
