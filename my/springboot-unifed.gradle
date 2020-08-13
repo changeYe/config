@@ -11,8 +11,8 @@ subprojects {
     version rootProject.version
 
     ext {
-        SpringCloudVesion = "Greenwich.RELEASE"
-        SpringBootVersion = "2.1.0.RELEASE"
+        springCloudVersion = "Greenwich.RELEASE"
+        springBootVersion = "2.1.0.RELEASE"
     }
     tasks.withType(JavaCompile){
         options.encoding = "UTF-8"
@@ -32,7 +32,6 @@ subprojects {
         annotationProcessor 'org.projectlombok:lombok:1.18.2'
     }
 }
-
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
